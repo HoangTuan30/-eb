@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Hôm nay ăn gì?</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+      background-color: #f9f9f9;
+    }
+    h1 {
+      color: #333;
+    }
+    button {
+      font-size: 20px;
+      padding: 15px 30px;
+      margin: 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      transform: scale(1.05);
+    }
+    .egg {
+      background-color: #ffd966;
+    }
+    .fish {
+      background-color: #8fd9a8;
+    }
+    #result {
+      margin-top: 40px;
+      font-size: 24px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Vợ yêu ơi, hôm nay mình ăn gì?</h1>
+  <button class="egg" onclick="choose('trứng chiên')">Trứng chiên</button>
+  <button class="fish" onclick="choose('cá chiên')">Cá chiên</button>
+
+  <div id="result"></div>
+
+  <script>
+    function choose(dish) {
+      document.getElementById("result").innerText = 
+        `Oke, vợ chọn ${dish}, chồng đi nấu đây`;
+    }
+  </script>
+
+</body>
+</html>
